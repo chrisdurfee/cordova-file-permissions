@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-file-permissions" version="1.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>File Permissions</name>
+    <author>Chris Durfee</author>
+    <description>Cordova plugin to add the file permissions.</description>
+    <keywords>cordova file permissions</keywords>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="android">
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      </config-file>
+    </platform>
+</plugin>
